@@ -51,23 +51,23 @@ function AddNote(props) {
                 </div>
                 <div className="my-2">
                     <label htmlFor="tag" className=" form-label">Tag</label>
-                    <select className="shadow-none rounded bg-dark text-white form-select" aria-label="Default select example" id="tag" value={note.tag} onChange={onchange} name="tag">
+                    <select className="shadow-none border-dark  rounded-0 bg-orange text-dark form-select" aria-label="Default select example" id="tag" value={note.tag} onChange={onchange} name="tag">
 
-                        <option value="Todo">Todo</option>
-                        <option value="Important">Important</option>
-                        <option value="Academic">Academic</option>
-                        <option value="Personal">Personal</option>
-                        <option value="Others">Others</option>
+                        <option className='border-dark rounded-0 bg-dark text-light ' value="Todo">Todo</option>
+                        <option className='border-dark rounded-0 bg-dark text-light ' value="Important">Important</option>
+                        <option className='border-dark rounded-0 bg-dark text-light ' value="Academic">Academic</option>
+                        <option className='border-dark rounded-0 bg-dark text-light ' value="Personal">Personal</option>
+                        <option className='border-dark rounded-0 bg-dark text-light ' value="Others">Others</option>
                     </select>
                 </div>
                 <div className="mb-3 input-container">
                     <label htmlFor="title" className="form-label">Title</label>
-                    <input type="text" className="bg-dark rounded-0  text-white shadow-none form-control" id="title" value={note.title} onChange={onchange} name="title" />
+                    <input type="text" className="border-dark bg-light rounded-0  text-dark shadow-none form-control" id="title" value={note.title} onChange={onchange} name="title" />
                     {errors.title && <span className='error'><i className="fa fa-info-circle"></i> {errors.title}</span>}
                 </div>
                 <div className="mb-5 input-container">
                     <label htmlFor="description" className="form-label">Description</label>
-                    <textarea className="bg-dark text-white rounded-0 shadow-none form-control" id="description" name="description" value={note.description} onChange={onchange} rows="3"></textarea>
+                    <textarea className="bg-light border-darktext-dark rounded-0 shadow-none form-control" id="description" name="description" value={note.description} onChange={onchange} rows="3"></textarea>
                     {errors.description && <span className='error'><i className="fa fa-info-circle"></i> {errors.description}</span>}
                 </div>
                 <div className='text-center mb-5 d-flex justify-content-center'>

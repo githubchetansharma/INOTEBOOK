@@ -70,10 +70,10 @@ function SignUp(props) {
     return (
         <>
             <div className='text-center mb-3'>
-            <h4 className="" href="#"><span className='text-primary'>IN</span><span className='text-danger'>O</span><span className='text-warning'>T</span><span className='text-primary'>E</span><span className='text-success'>BO</span><span className='text-danger'>OK</span></h4><p>YOUR NOTES ON CLOUD</p>
+            <h4 className="" href="#"><span className='text-primary'>M Y </span><span className='text-danger'>N O </span><span className='text-warning'>T </span><span className='text-primary'>E </span><span className='text-success'>B O </span><span className='text-danger'>O K</span></h4><p>YOUR   NOTES   ON   CLOUD</p>
             </div>
 
-                <div className="container form">
+                <div className="container w-50 form">
                     <p className="text-center my-3"><i>New to iNotebook?  Create a new account here ! </i></p>
                     <div className=" input-container">
                         <label htmlFor="email" className="form-label"></label>

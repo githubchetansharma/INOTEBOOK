@@ -23,12 +23,12 @@ function App() {
 }
 
   return (
-    <div className='app'>
+    <div>
+      <div className=' mb-3 app'>
       <NoteState>
         <BrowserRouter>
           <Navbar />
           <Alert alert={alert} />
-     
           <div className='container my-4'>
             <Routes>
               <Route path="/notes" element={<Notes showAlert={showAlert} />} />
@@ -38,9 +38,12 @@ function App() {
               <Route path="/signup" element={<SignUp showAlert={showAlert}/>} />
             </Routes>
           </div>
-          <Footer/>
         </BrowserRouter>
       </NoteState>
+    </div>
+    <div>
+          <Footer/>
+    </div>
     </div>
   );
 }

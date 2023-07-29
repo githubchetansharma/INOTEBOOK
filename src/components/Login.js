@@ -52,12 +52,12 @@ function Login(props) {
 
     return (
         <div>
-            <div className='text-center     mb-3'>
-            <h4 className="" href="#"><span className='text-primary'>IN</span><span className='text-danger'>O</span><span className='text-warning'>T</span><span className='text-primary'>E</span><span className='text-success'>BO</span><span className='text-danger'>OK</span></h4>
+            <div className='text-center mb-3'>
+                <h4 className="" href="#"><span className='text-primary'>MY</span><span className='text-danger'>NO</span><span className='text-warning'>T</span><span className='text-primary'>E</span><span className='text-success'>BO</span><span className='text-danger'>OK</span></h4>
                 <p>YOUR NOTES ON CLOUD </p>
             </div>
 
-            <div className="container form">
+            <div className="container w-50 form">
                 <h2 className="text-center"><i><b> Welcome back</b></i></h2>
                 <div className="mb-4 input-container">
                     <label htmlFor="email" className="form-label"></label>
