@@ -1,14 +1,13 @@
 const express = require('express');
 const User = require('../models/User');
 const router = express.Router();
-// password and other user data unique ho ya na ho is liye validation lagate hai 
+// password and other  user data unique ho ya na ho is liye validation lagate hai 
 const { body, validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
 var jwt = require('jsonwebtoken');
 var fetchuser = require('../middleware/fetchuser');
 
 const JWT_SECRET = 'Harryisagoodb$oy';
-
 // ROUTE 1: Create a User using: POST "/api/auth/createuser". No login required
 // jo bhis is array [] ke andar likha hai validation hai ki intna to hona hi chahiye 
 router.post('/createuser', [

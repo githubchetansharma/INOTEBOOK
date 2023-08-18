@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
 
-const mongoURI = "mongodb://127.0.0.1:27017/inotebookdata?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false"
+const mongoURI = "mongodb+srv://chetanpanditt48:sahayata@cluster0.krp9ax1.mongodb.net/inotebookdata?retryWrites=true&w=majority"
 const connectToMongo = ()=>{
     mongoose.connect(mongoURI, ()=>{
-        console.log("Connected to Mongo Successfully");
+        console.log(`Connected to Mongo Successfully ${mongoose.connection.host}`);
     })
 }
-
-module.exports = connectToMongo;
+module.exports = connectToMongo;   
